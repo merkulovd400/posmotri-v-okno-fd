@@ -176,14 +176,8 @@ ol {
   color: rgba(84, 80, 80, 1);
 }
 
-.content__card-link {
-  text-decoration: none;
-  color: white;
-}
-
 .content__video-card-title {
   font-family: Oswald;
-  display: flex;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -244,10 +238,9 @@ ol {
   width: 100%;
   height: 100%;
   opacity: 0;
-
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
@@ -280,7 +273,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__submit-button { 
+.search-form__submit-button {
   width: 194px;
   align-self: flex-end;
   padding-right: 3px;
@@ -298,11 +291,7 @@ ol {
 }
 
 .button:active {
-background-color: rgba(84, 80, 80, 1); 
-}
-
-.button:focus-visible {
-  outline: 1px solid #fff;
+  background-color: rgba(84, 80, 80, 1);
 }
 
 .button:focus {
@@ -316,6 +305,8 @@ background-color: rgba(84, 80, 80, 1);
 
 .content__card-link {
   display: block;
+  text-decoration: none;
+  color: white;
 }
 
 .content__card-link.content__card-link_current,
