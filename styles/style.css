@@ -163,7 +163,6 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  height: 103px;
 }
 
 .title {
@@ -325,10 +324,11 @@ ol {
 
 .content__card-link:focus {
   text-decoration: none;
+  outline: none;
 }
 
 .content__card-link:focus-visible {
-  text-decoration: none;
+  outline: 1px solid #fff;
 }
 
 .content__list-item {
