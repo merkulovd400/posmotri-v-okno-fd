@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', 'Arial', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -87,7 +87,6 @@ ol {
   justify-content: space-between;
   align-items: start;
   width: 711px;
-  height: 54px;
 }
 
 .search-form__fieldset {
@@ -118,8 +117,12 @@ ol {
   width: 225px;
   height: 27px;
   font-size: 18px;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, 'Arial', sans-serif;
   font-weight: 400;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .content__details {
@@ -160,10 +163,11 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  height: 103px;
 }
 
 .title {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, 'Arial', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -177,7 +181,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, 'Arial', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -191,7 +195,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: Fira Sans Condensed, 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -268,7 +272,7 @@ ol {
   background-color: transparent;
   font-size: 18px;
   font-weight: 700;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, 'Arial', sans-serif;
   min-height: 34px;
   cursor: pointer;
 }
@@ -304,9 +308,14 @@ ol {
 }
 
 .content__card-link {
-  display: block;
+  color: #fff;
   text-decoration: none;
-  color: white;
+  display: block;
+  cursor: pointer;
+}
+
+.content__card-link:hover {
+  text-decoration: underline solid #fff;
 }
 
 .content__card-link.content__card-link_current,
@@ -314,17 +323,12 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link:hover {
-  text-decoration: underline 1px solid #fff;
-  text-underline-offset: 3px;
-}
-
 .content__card-link:focus {
   text-decoration: none;
 }
 
 .content__card-link:focus-visible {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .content__list-item {
